@@ -80,8 +80,10 @@
             <div class="section__eyebrow">01 / LES FILS À MAMAN</div>
             <h2>La palette</h2>
             <p>
-              Des pastels gourmands, une encre qui structure. Les valeurs et les
-              rôles proviennent directement d’Analyse DA.
+              Des pastels gourmands, une encre qui structure. Les primitives
+              regroupent les valeurs brutes de la palette, les variables
+              sémantiques leur donnent un rôle et sont les seules utilisées
+              par les composants.
             </p>
           </div>
           <a
@@ -92,115 +94,259 @@
             >Source Figma ↗</a
           >
         </header>
+        <h3 class="token-title">Primitives</h3>
         <div class="swatches">
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #0f172a"
+              style="background: var(--primitive-encre)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Encre</h3>
+              <h4>Encre</h4>
               <code>#0F172A</code>
+              <code>--primitive-encre</code>
               <p>Textes, contours, ombres</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #fef5ee"
+              style="background: var(--primitive-peche)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Pêche</h3>
+              <h4>Pêche</h4>
               <code>#FEF5EE</code>
+              <code>--primitive-peche</code>
               <p>Fond de page</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #fffaeb"
+              style="background: var(--primitive-creme)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Crème</h3>
+              <h4>Crème</h4>
               <code>#FFFAEB</code>
+              <code>--primitive-creme</code>
               <p>Cartes, bouton secondaire</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #fede85"
+              style="background: var(--primitive-jaune)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Jaune</h3>
+              <h4>Jaune</h4>
               <code>#FEDE85</code>
+              <code>--primitive-jaune</code>
               <p>Bandeaux, catégorie Desserts &amp; boissons</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #f3a0cf"
+              style="background: var(--primitive-rose)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Rose</h3>
+              <h4>Rose</h4>
               <code>#F3A0CF</code>
+              <code>--primitive-rose</code>
               <p>Catégorie À partager</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #79cfc2"
+              style="background: var(--primitive-turquoise)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Turquoise</h3>
+              <h4>Turquoise</h4>
               <code>#79CFC2</code>
+              <code>--primitive-turquoise</code>
               <p>Titres, catégorie Plats</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #abe4da"
+              style="background: var(--primitive-turquoise-clair)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Turquoise clair</h3>
+              <h4>Turquoise clair</h4>
               <code>#ABE4DA</code>
+              <code>--primitive-turquoise-clair</code>
               <p>Bouton principal</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #ea591d"
+              style="background: var(--primitive-orange)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Orange</h3>
+              <h4>Orange</h4>
               <code>#EA591D</code>
+              <code>--primitive-orange</code>
               <p>Logo, grandes accroches</p>
             </div>
           </article>
           <article class="swatch">
             <div
               class="swatch__color"
-              style="background: #334155"
+              style="background: var(--primitive-ardoise)"
               aria-hidden="true"
             ></div>
             <div class="swatch__info">
-              <h3>Ardoise</h3>
+              <h4>Ardoise</h4>
               <code>#334155</code>
+              <code>--primitive-ardoise</code>
               <p>Textes secondaires</p>
             </div>
           </article>
+        </div>
+        <h3 class="token-title">Sémantique</h3>
+        <div class="table-scroll">
+          <table class="inventory">
+            <thead>
+              <tr>
+                <th>Variable</th>
+                <th>Primitive</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>--semantic-fond-page</code></td>
+                <td><code>--primitive-peche</code></td>
+                <td>Fond de page</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-fond-surface</code></td>
+                <td><code>--primitive-creme</code></td>
+                <td>Cartes, champs et surfaces</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-fond-sombre</code></td>
+                <td><code>--primitive-encre</code></td>
+                <td>Pied de page et éléments inversés</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-fond-accent</code></td>
+                <td><code>--primitive-jaune</code></td>
+                <td>Mise en avant</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-texte-principal</code></td>
+                <td><code>--primitive-encre</code></td>
+                <td>Texte courant et titres</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-texte-secondaire</code></td>
+                <td><code>--primitive-ardoise</code></td>
+                <td>Descriptions et légendes</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-texte-inverse</code></td>
+                <td><code>--primitive-creme</code></td>
+                <td>Texte sur fond sombre</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-texte-titre</code></td>
+                <td><code>--primitive-turquoise</code></td>
+                <td>Grands titres</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-texte-accent</code></td>
+                <td><code>--primitive-orange</code></td>
+                <td>Accroches et logo</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-texte-accent-sur-sombre</code></td>
+                <td><code>--primitive-jaune</code></td>
+                <td>Accent sur fond sombre</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-bouton-principal</code></td>
+                <td><code>--primitive-turquoise-clair</code></td>
+                <td>Bouton principal</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-bouton-secondaire</code></td>
+                <td><code>--primitive-creme</code></td>
+                <td>Bouton secondaire</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-bouton-tertiaire</code></td>
+                <td><code>--primitive-rose</code></td>
+                <td>Bouton tertiaire</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-bouton-texte</code></td>
+                <td><code>--primitive-encre</code></td>
+                <td>Texte des boutons</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-categorie-a-partager</code></td>
+                <td><code>--primitive-rose</code></td>
+                <td>Catégorie À partager</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-categorie-plats</code></td>
+                <td><code>--primitive-turquoise</code></td>
+                <td>Catégorie Plats</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-categorie-desserts-boissons</code></td>
+                <td><code>--primitive-jaune</code></td>
+                <td>Catégorie Desserts et boissons</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-bordure-principale</code></td>
+                <td><code>--primitive-encre</code></td>
+                <td>Contours des composants</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-ombre-portee</code></td>
+                <td><code>--primitive-encre</code></td>
+                <td>Ombres décalées</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-focus</code></td>
+                <td><code>--primitive-encre</code></td>
+                <td>Contour de focus</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-focus-sur-sombre</code></td>
+                <td><code>--primitive-jaune</code></td>
+                <td>Contour de focus sur fond sombre</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-voile-fort</code></td>
+                <td><code>--primitive-encre-88</code></td>
+                <td>Voile sur photo, bas du visuel</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-voile-moyen</code></td>
+                <td><code>--primitive-encre-45</code></td>
+                <td>Voile sur photo, milieu</td>
+              </tr>
+              <tr>
+                <td><code>--semantic-voile-leger</code></td>
+                <td><code>--primitive-encre-5</code></td>
+                <td>Voile sur photo, haut</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <p class="note">
           L’orange est réservé au logo et aux grandes accroches. Les petits
@@ -1428,7 +1574,7 @@
             <div class="phone__content">
               <h3
                 class="lf-title lf-title--outlined"
-                style="color: var(--rose)"
+                style="color: var(--semantic-categorie-a-partager)"
               >
                 À PARTAGER
               </h3>

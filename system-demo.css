@@ -18,7 +18,7 @@
         left: 1.25rem;
         z-index: 100;
         padding: 0.75rem;
-        background: var(--jaune);
+        background: var(--semantic-fond-accent);
     }
 
     .skip:focus {
@@ -35,7 +35,7 @@
         border-right: var(--contour);
         padding: 2rem 1.5rem 1.5rem;
         overflow-y: auto;
-        background: var(--creme);
+        background: var(--semantic-fond-surface);
     }
 
     .sidebar__brand {
@@ -56,7 +56,7 @@
         font: 0.6875rem/1.4 monospace;
         text-transform: uppercase;
         letter-spacing: 0.075rem;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .sidebar nav {
@@ -78,12 +78,12 @@
 
     .sidebar nav a span {
         font: 0.6875rem monospace;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .sidebar nav a:hover {
-        border-color: var(--encre);
-        background: var(--turquoise-clair);
+        border-color: var(--semantic-bordure-principale);
+        background: var(--semantic-bouton-principal);
     }
 
     .sidebar__bottom {
@@ -124,9 +124,9 @@
         content: "";
         width: 0.4375rem;
         height: 0.4375rem;
-        border: 0.0625rem solid var(--encre);
+        border: 0.0625rem solid var(--semantic-bordure-principale);
         border-radius: 50%;
-        background: var(--turquoise);
+        background: var(--semantic-categorie-plats);
     }
 
     .doc-intro {
@@ -165,7 +165,7 @@
         border: var(--contour);
         border-radius: 62.4375rem;
         font: 0.6875rem/1 monospace;
-        background: var(--creme);
+        background: var(--semantic-fond-surface);
     }
 
     .doc-intro__sticker {
@@ -198,7 +198,7 @@
         font: 0.6875rem/1.5 monospace;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .section__head h2 {
@@ -209,7 +209,7 @@
         margin-top: 0.625rem;
         max-width: 43.75rem;
         line-height: 1.5;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .source-link {
@@ -222,7 +222,7 @@
         padding: 1.75rem;
         border: var(--contour);
         border-radius: 0.75rem;
-        background: var(--creme);
+        background: var(--semantic-fond-surface);
     }
 
     .panel--clear {
@@ -244,14 +244,20 @@
         font: 0.6875rem/1.5 monospace;
         text-transform: uppercase;
         letter-spacing: 0.05rem;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .note {
         margin-top: 1.125rem;
         font-size: 0.875rem;
         line-height: 1.5;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
+    }
+
+    .token-title {
+        margin: 1.5rem 0 0.875rem;
+        font-size: 1.25rem;
+        line-height: 1.2;
     }
 
     .swatches {
@@ -264,7 +270,7 @@
         border: var(--contour);
         border-radius: 0.625rem;
         overflow: hidden;
-        background: var(--creme);
+        background: var(--semantic-fond-surface);
     }
 
     .swatch__color {
@@ -276,7 +282,7 @@
         padding: 0.75rem;
     }
 
-    .swatch h3 {
+    .swatch h4 {
         font-size: 1rem;
         line-height: 1.2;
     }
@@ -315,7 +321,7 @@
         display: block;
         margin-top: 0.3125rem;
         font: 0.6875rem/1.5 monospace;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .type-row__sample {
@@ -346,7 +352,7 @@
         width: 1.75rem;
         border: var(--contour);
         border-radius: 0.1875rem;
-        background: var(--turquoise-clair);
+        background: var(--semantic-bouton-principal);
     }
 
     .geometry {
@@ -361,7 +367,7 @@
         border: var(--contour);
         min-width: 6.875rem;
         text-align: center;
-        background: var(--peche);
+        background: var(--semantic-fond-page);
     }
 
     .geometry__box code {
@@ -392,11 +398,11 @@
 
     .state-grid small {
         font: 0.6875rem monospace;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .lf-btn--focus {
-        outline: 0.1875rem solid var(--encre);
+        outline: 0.1875rem solid var(--semantic-focus);
         outline-offset: 0.3125rem;
     }
 
@@ -421,7 +427,7 @@
 
     .catalog-tools small {
         font: 0.6875rem monospace;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .logo-samples {
@@ -440,11 +446,11 @@
         border: var(--contour);
         border-radius: 0.75rem;
         padding: 1.25rem;
-        background: var(--peche);
+        background: var(--semantic-fond-page);
     }
 
     .logo-sample--dark {
-        background: var(--encre);
+        background: var(--semantic-fond-sombre);
     }
 
     .sticker-row {
@@ -528,7 +534,7 @@
         display: block;
         margin-top: 0.25rem;
         font: 0.625rem monospace;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .principle {
@@ -544,7 +550,7 @@
     .principle p {
         font-size: 0.9375rem;
         line-height: 1.5;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .preview-shell {
@@ -561,7 +567,7 @@
         padding: 0.75rem 1.25rem;
         border-bottom: var(--contour);
         font: 0.6875rem monospace;
-        background: var(--creme);
+        background: var(--semantic-fond-surface);
     }
 
     .hero-preview .lf-hero {
@@ -596,7 +602,7 @@
         border: var(--contour-fort);
         border-radius: 1.5rem;
         overflow: hidden;
-        background: var(--peche);
+        background: var(--semantic-fond-page);
         box-shadow: var(--ombre-carte);
     }
 
@@ -641,7 +647,7 @@
         gap: 0.5rem;
         padding: 0.75rem 1rem;
         font-size: 0.875rem;
-        background: var(--jaune);
+        background: var(--semantic-fond-accent);
     }
 
     .phone__menu {
@@ -694,7 +700,7 @@
         font: 0.6875rem monospace;
         text-transform: uppercase;
         letter-spacing: 0.0375rem;
-        background: var(--creme);
+        background: var(--semantic-fond-surface);
     }
 
     .inventory td:first-child {
@@ -710,7 +716,7 @@
         padding-top: 1.5rem;
         border-top: var(--contour);
         font-size: 0.75rem;
-        color: var(--ardoise);
+        color: var(--semantic-texte-secondaire);
     }
 
     .export-buttons {
@@ -1222,7 +1228,7 @@
     }
 
     .phone:has(.phone__toggle:focus-visible) .phone__menu-button {
-        outline: 0.1875rem solid var(--encre);
+        outline: 0.1875rem solid var(--semantic-focus);
         outline-offset: 0.25rem;
     }
 
